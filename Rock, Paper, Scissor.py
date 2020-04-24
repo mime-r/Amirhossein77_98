@@ -6,7 +6,7 @@ user_win = 0
 computer_win = 0
 tries = 0
 yes_values = ["yes", "yep", "yeah", "y", "aha", "ohom", "ye", "yey"]
-no_answers = ["no", "nope", "nay", "na", "n", "aa", "ne", "ney", "na"]
+no_answers = ["no", "nope", "nay", "na", "n", "aa", "ne", "ney", "na", "nah"]
 # Dictionary below defines the possible answers for every element, and containers can be considered as a list and be
 # used for random function to get a random value of "rock", "paper", or "scissor"
 choices_dict = {
@@ -39,22 +39,14 @@ def main():
         # Code below returns the result of the game after the game() function is done and closed.
         if user_win > computer_win:
             print("You Win!")
-            play = input("Do you want to play again? ")
-            tries = 0
-            user_win = 0
-            computer_win = 0
         elif user_win < computer_win:
             print("You Lose!")
-            play = input("Do you want to play again? ")
-            tries = 0
-            user_win = 0
-            computer_win = 0
         elif user_win == computer_win:
             print("Draw!")
-            play = input("Do you want to play again? ")
-            tries = 0
-            user_win = 0
-            computer_win = 0
+        play = input("Do you want to play again? ")
+        tries = 0
+        user_win = 0
+        computer_win = 0
 
 
 # Game's section
